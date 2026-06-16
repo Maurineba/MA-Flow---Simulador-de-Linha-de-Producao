@@ -3,21 +3,30 @@
 
 #include "pilha.h"
 
-void empilhar_historico(Produto *produto, int atividade_id) {
+void empilhar_historico(
+   Produto *produto,
+   int etapa_id,
+   int atividade_id
+) {
    if (produto == NULL) {
       return;
    }
 
-   HistoricoNo *novo_no = malloc(sizeof(HistoricoNo));
+   HistoricoNo *novo_no =
+      malloc(sizeof(HistoricoNo));
 
    if (novo_no == NULL) {
-      printf("Erro ao registrar atividade no historico.\n");
+      printf(
+         "Erro ao alocar memoria para o historico.\n"
+      );
+
       return;
    }
 
+   novo_no->etapa_id = etapa_id;
    novo_no->atividade_id = atividade_id;
-   novo_no->prox = produto->historico.topo;
 
+   novo_no->prox = produto->historico.topo;
    produto->historico.topo = novo_no;
    produto->historico.quantidade++;
 }
@@ -36,6 +45,22 @@ int desempilhar_historico(Produto *produto) {
    free(no_removido);
 
    return atividade_id;
+}
+
+void remover_historico_etapa(
+   Produto *produto,
+   int etapa_id
+) {
+   if (produto == NULL) {
+      return;
+   }
+
+   while (
+      produto->historico.topo != NULL &&
+      produto->historico.topo->etapa_id == etapa_id
+   ) {
+      desempilhar_historico(produto);
+   }
 }
 
 void liberar_historico(Produto *produto) {

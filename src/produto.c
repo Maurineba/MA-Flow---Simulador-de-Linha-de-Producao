@@ -30,6 +30,9 @@ Produto *criar_produto(int id, int tick_criacao) {
    novo_produto->historico.quantidade = 0;
 
    novo_produto->produto_prox = NULL;
+   novo_produto->arvore_esq = NULL;
+   novo_produto->arvore_dir = NULL;
+   novo_produto->aguardando_retorno = 0;
 
    return novo_produto;
 }

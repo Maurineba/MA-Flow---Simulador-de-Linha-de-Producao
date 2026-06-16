@@ -34,6 +34,7 @@ Simulacao *criar_simulacao() {
 
    simulacao->descartados.topo = NULL;
    simulacao->descartados.quantidade = 0;
+   simulacao->raiz_produtos_ativos = NULL;
 
    simulacao->fila_entrada = criar_fila();
    if (simulacao->fila_entrada == NULL) {
@@ -88,6 +89,7 @@ void liberar_simulacao(Simulacao *simulacao) {
 
       produto_concluido = produto_prox;
    }
+   
    liberar_pilha_descarte(&simulacao->descartados);
    liberar_fila(simulacao->fila_entrada);
    free(simulacao);

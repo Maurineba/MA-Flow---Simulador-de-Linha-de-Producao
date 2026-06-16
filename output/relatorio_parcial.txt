@@ -1,0 +1,109 @@
+=== RELATORIO PARCIAL ===
+Simulacao: teste_pausa
+Tick atual: 10
+Produtos previstos: 10
+Produtos criados: 10
+Produtos concluidos: 0
+Produtos descartados: 0
+Produtos finalizados: 0
+Produtos na fila: 7
+Falhas registradas: 0
+
+--- ESTADO DAS ETAPAS ---
+
+Etapa 1 - Preparacao
+Ocupacao: 2/2
+Falhas: 0
+
+Etapa 2 - Montagem
+Ocupacao: 1/1
+Falhas: 0
+
+--- PRODUTOS AGUARDANDO NA FILA ---
+
+--- PRODUTO 4 ---
+Modelo: Produto-Pausa
+Situacao: aguardando na fila
+Criacao: tick 1
+Tempo aguardando: 9 ticks
+Falhas: 0
+
+--- PRODUTO 5 ---
+Modelo: Produto-Pausa
+Situacao: aguardando na fila
+Criacao: tick 2
+Tempo aguardando: 8 ticks
+Falhas: 0
+
+--- PRODUTO 6 ---
+Modelo: Produto-Pausa
+Situacao: aguardando na fila
+Criacao: tick 2
+Tempo aguardando: 8 ticks
+Falhas: 0
+
+--- PRODUTO 7 ---
+Modelo: Produto-Pausa
+Situacao: aguardando na fila
+Criacao: tick 3
+Tempo aguardando: 7 ticks
+Falhas: 0
+
+--- PRODUTO 8 ---
+Modelo: Produto-Pausa
+Situacao: aguardando na fila
+Criacao: tick 3
+Tempo aguardando: 7 ticks
+Falhas: 0
+
+--- PRODUTO 9 ---
+Modelo: Produto-Pausa
+Situacao: aguardando na fila
+Criacao: tick 4
+Tempo aguardando: 6 ticks
+Falhas: 0
+
+--- PRODUTO 10 ---
+Modelo: Produto-Pausa
+Situacao: aguardando na fila
+Criacao: tick 4
+Tempo aguardando: 6 ticks
+Falhas: 0
+
+--- PRODUTOS ATIVOS NAS ETAPAS ---
+
+--- PRODUTO 2 ---
+Modelo: Produto-Pausa
+Situacao: em processamento
+Criacao: tick 0
+Entrada na linha: tick 0
+Tempo em espera: 0 ticks
+Etapa atual: 1 - Preparacao
+Atividade atual: todas concluidas
+Estado: aguardando vaga na proxima etapa
+Falhas: 0
+Trajetoria: etapa_1/atividade_10 -> etapa_1/atividade_11
+
+--- PRODUTO 3 ---
+Modelo: Produto-Pausa
+Situacao: em processamento
+Criacao: tick 1
+Entrada na linha: tick 6
+Tempo em espera: 5 ticks
+Etapa atual: 1 - Preparacao
+Atividade atual: 11 - Medir
+Progresso da atividade: 0/3 ticks
+Falhas: 0
+Trajetoria: etapa_1/atividade_10
+
+--- PRODUTO 1 ---
+Modelo: Produto-Pausa
+Situacao: em processamento
+Criacao: tick 0
+Entrada na linha: tick 0
+Tempo em espera: 0 ticks
+Etapa atual: 2 - Montagem
+Atividade atual: 20 - Montar
+Progresso da atividade: 3/4 ticks
+Falhas: 0
+Trajetoria: etapa_1/atividade_10 -> etapa_1/atividade_11

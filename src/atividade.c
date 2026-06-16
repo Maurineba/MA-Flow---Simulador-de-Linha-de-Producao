@@ -26,6 +26,7 @@ Atividade *criar_atividade_por_linha(const char *linha) {
       return NULL;
    }
 
+   nova_atividade->quantidade_falhas = 0;
    nova_atividade->atividade_prox = NULL;
 
    return nova_atividade;

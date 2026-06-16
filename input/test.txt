@@ -1,7 +1,9 @@
-SIMULACAO teste_historico 42 20
-PRODUTO 1 1 Widget-A
-LINHA_PRODUCAO 2
-ETAPA 1 1 1 0.00 Preparacao
-ATIVIDADE 10 1 0.00 Cortar
-ETAPA 2 1 1 0.00 Montagem
-ATIVIDADE 20 1 0.00 Montar
+SIMULACAO teste_gargalo 42 30
+PRODUTO 8 2 Produto-Gargalo
+LINHA_PRODUCAO 3
+ETAPA 1 1 3 0.00 Preparacao
+ATIVIDADE 10 1 0.00 Preparar
+ETAPA 2 1 1 0.00 Processamento
+ATIVIDADE 20 6 0.00 Processar
+ETAPA 3 1 2 0.00 Finalizacao
+ATIVIDADE 30 1 0.00 Finalizar

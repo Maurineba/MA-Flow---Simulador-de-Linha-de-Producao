@@ -6,11 +6,11 @@
 typedef struct Atividade {
    int id;
    int duracao;
+   int quantidade_falhas;
    float taxa_falha;
    char nome[30];
 
    struct Atividade *atividade_prox;
-
 } Atividade;
 
 typedef struct Etapa {
@@ -18,6 +18,9 @@ typedef struct Etapa {
    int qtde_atividades;
    int capacidade;
    int ocupacao_atual;
+   int ocupacao_maxima;
+   int quantidade_falhas;
+   int ticks_bloqueada;
    float taxa_falha;
    char nome[30];
 
@@ -26,8 +29,7 @@ typedef struct Etapa {
 
    struct Etapa *etapa_ant;
    struct Etapa *etapa_prox;
-
-}  Etapa;
+} Etapa;
 
 typedef struct LinhaProducao {
    int qtde_etapas;
@@ -65,6 +67,7 @@ typedef struct Simulacao {
    Produto *lista_concluidos;
 
    PilhaDescarte descartados;
+   Produto *raiz_produtos_ativos;
 
 } Simulacao;
 

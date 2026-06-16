@@ -5,7 +5,9 @@ struct Etapa;
 struct Atividade;
 
 typedef struct HistoricoNo {
+   int etapa_id;
    int atividade_id;
+
    struct HistoricoNo *prox;
 
 } HistoricoNo;
@@ -28,6 +30,8 @@ typedef struct Produto {
    int tempo_espera;
 
    int tempo_atividade;
+   int aguardando_retorno;
+
    struct Etapa *etapa_atual;
    struct Atividade *atividade_atual;
 
@@ -35,6 +39,8 @@ typedef struct Produto {
 
    struct Produto *produto_prox;
 
+   struct Produto *arvore_esq;
+   struct Produto *arvore_dir;
 } Produto;
 
 Produto *criar_produto(int id, int tick_criacao);

@@ -27,12 +27,17 @@ Etapa *criar_etapa_por_linha(const char *linha) {
       return NULL;
    }
 
+   nova_etapa->quantidade_falhas = 0;
    nova_etapa->ocupacao_atual = 0;
+
    nova_etapa->atividade = NULL;
    nova_etapa->produtos = NULL;
 
    nova_etapa->etapa_ant = NULL;
    nova_etapa->etapa_prox = NULL;
+
+   nova_etapa->ocupacao_maxima = 0;
+   nova_etapa->ticks_bloqueada = 0;
 
    return nova_etapa;
 }
@@ -86,6 +91,11 @@ void inserir_produto_etapa(Etapa *etapa, Produto *produto) {
    if (etapa->produtos == NULL) {
       etapa->produtos = produto;
       etapa->ocupacao_atual++;
+
+      if (etapa->ocupacao_atual > etapa->ocupacao_maxima) {
+         etapa->ocupacao_maxima = etapa->ocupacao_atual;
+      }
+
       return;
    }
 
@@ -97,6 +107,10 @@ void inserir_produto_etapa(Etapa *etapa, Produto *produto) {
 
    produto_atual->produto_prox = produto;
    etapa->ocupacao_atual++;
+
+   if (etapa->ocupacao_atual > etapa->ocupacao_maxima) {
+      etapa->ocupacao_maxima = etapa->ocupacao_atual;
+   }
 }
 
 Produto *remover_produto_etapa(Etapa *etapa, Produto *produto) {
