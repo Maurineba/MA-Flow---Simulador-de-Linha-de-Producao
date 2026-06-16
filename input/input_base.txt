@@ -1,0 +1,5 @@
+SIMULACAO [nome_simulacao] [semente_para_numeros_aleatorios] [limite_tempo_seg]
+PRODUTO <quantidade_a_produzir> <taxa_produtos_por_seg> <nome_produto>
+LINHA_PRODUCAO <quantidade_etapas>
+ETAPA <id> <quantidade_atividades> <capacidade_total> <taxa_falha_inicial> [nome]
+ATIVIDADE <id> <tempo_para_finalizar_atividade> <taxa_falha> [nome]
