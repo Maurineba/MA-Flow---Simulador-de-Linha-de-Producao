@@ -1,0 +1,7 @@
+SIMULACAO teste_historico 42 20
+PRODUTO 1 1 Widget-A
+LINHA_PRODUCAO 2
+ETAPA 1 1 1 0.00 Preparacao
+ATIVIDADE 10 1 0.00 Cortar
+ETAPA 2 1 1 0.00 Montagem
+ATIVIDADE 20 1 0.00 Montar
