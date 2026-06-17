@@ -38,6 +38,12 @@ Etapa *criar_etapa_por_linha(const char *linha) {
 
    nova_etapa->ocupacao_maxima = 0;
    nova_etapa->ticks_bloqueada = 0;
+   nova_etapa->produtos_processados = 0;
+   nova_etapa->soma_tempos = 0;
+   nova_etapa->tempo_minimo = 0;
+   nova_etapa->tempo_maximo = 0;
+   nova_etapa->soma_tempos_fila = 0;
+   nova_etapa->entradas_na_etapa = 0;
 
    return nova_etapa;
 }

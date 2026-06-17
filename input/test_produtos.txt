@@ -1,0 +1,5 @@
+SIMULACAO teste_produtos 7 20
+PRODUTOS 2 1 Produto-Plural
+LINHA_PRODUCAO 1
+ETAPA 1 1 1 0.00 Unica
+ATIVIDADE 10 1 0.00 Fazer

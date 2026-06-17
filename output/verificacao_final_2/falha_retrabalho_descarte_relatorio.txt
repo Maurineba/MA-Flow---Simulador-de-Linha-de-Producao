@@ -1,0 +1,78 @@
+=== METADADOS ===
+id_simulacao: teste_falha_leve_20260616_212944
+semente_utilizada: 42
+arquivo_entrada: input\test_falha_leve.txt
+tick_fim: 3
+produtos_criados: 1
+produtos_concluidos: 0
+produtos_descartados: 1
+produtos_finalizados: 1
+produtos_na_fila: 0
+produtos_ativos: 0
+tempo_medio_linha: 0.00
+tempo_medio_espera: 0.00
+falhas_totais: 2
+meta_alcancada: nao
+produtos_faltantes: 1
+
+=== RELATORIO DA SIMULACAO teste_falha_leve_20260616_212944 ===
+
+--- RELATORIO DAS ETAPAS ---
+
+ETAPA 1 Retrabalho
+Atividades: 1
+Capacidade: 1
+Ocupacao final: 0
+Ocupacao maxima: 1/1
+Ticks bloqueada: 0
+Taxa de retorno/controle inicial: 0.00
+Quantidade de falhas: 2
+Falhas por produto: 1.00
+Tempo minimo: 1
+Tempo medio: 1.50
+Tempo maximo: 2
+Tempo medio em fila: 0.50
+
+--- RELATORIO DAS ATIVIDADES ---
+
+ETAPA 1 Retrabalho:
+ATIVIDADE 10 Refazer:
+Capacidade: 1
+Vazao: 2
+Tempo de execucao: 1
+Tempo medio em fila: 0.50
+Tempo medio total: 1.50
+Quantidade de falhas: 2
+
+--- ANALISE DE GARGALO ---
+Nenhum gargalo identificado.
+
+--- RELATORIO DOS PRODUTOS ---
+
+--- PRODUTOS CONCLUIDOS ---
+Nenhum produto concluido.
+
+--- PRODUTOS DESCARTADOS ---
+
+--- PRODUTO 1 ---
+Modelo: Produto-Retrabalho
+Situacao: descartado
+Criacao: tick 0
+Entrada na linha: tick 0
+Saida da linha: tick 3
+Tempo total: 3 ticks
+Tempo em espera: 0 ticks
+Falhas: 2
+Trajetoria:
+Etapa 1 tentativa 1:
+Atividade 10 (Refazer) fila:1 inicio:1 fim:2 FALHOU
+Ticks na etapa: 2 ticks
+Etapa 1 tentativa 2:
+Atividade 10 (Refazer) fila:0 inicio:2 fim:3 FALHOU
+Ticks na etapa: 1 ticks
+
+--- PRODUTOS AGUARDANDO NA FILA ---
+Nenhum produto aguardando na fila.
+
+--- PRODUTOS ATIVOS NAS ETAPAS ---
+Nenhum produto ativo nas etapas.

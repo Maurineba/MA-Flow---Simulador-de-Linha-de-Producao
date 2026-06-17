@@ -1,0 +1,5 @@
+SIMULACAO teste_falha_leve 42 8
+PRODUTO 1 1 Produto-Retrabalho
+LINHA_PRODUCAO 1
+ETAPA 1 1 1 0.00 Retrabalho
+ATIVIDADE 10 1 1.00 Refazer

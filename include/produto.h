@@ -7,6 +7,13 @@ struct Atividade;
 typedef struct HistoricoNo {
    int etapa_id;
    int atividade_id;
+   char atividade_nome[30];
+   int tentativa;
+   int tick_fila;
+   int tick_inicio;
+   int tick_fim;
+   int ticks_etapa;
+   int sucesso;
 
    struct HistoricoNo *prox;
 
@@ -31,11 +38,19 @@ typedef struct Produto {
 
    int tempo_atividade;
    int aguardando_retorno;
+   int tick_entrada_etapa;
+   int tick_entrada_atividade;
+   int tick_inicio_atividade;
+   int tentativa_etapa;
+   int etapa_tentativa_id;
+   int controle_qualidade_verificado;
+   int etapa_metricas_registradas;
 
    struct Etapa *etapa_atual;
    struct Atividade *atividade_atual;
 
    PilhaHistorico historico;
+   PilhaHistorico auditoria;
 
    struct Produto *produto_prox;
 

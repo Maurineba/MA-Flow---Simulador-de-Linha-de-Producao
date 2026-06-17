@@ -3,7 +3,32 @@
 
 #include "simulacao.h"
 
-void empilhar_historico( Produto *produto, int etapa_id, int atividade_id );
+void empilhar_historico(
+   Produto *produto,
+   int etapa_id,
+   int atividade_id,
+   const char *atividade_nome,
+   int tentativa,
+   int tick_fila,
+   int tick_inicio,
+   int tick_fim,
+   int ticks_etapa,
+   int sucesso
+);
+
+void empilhar_auditoria(
+   Produto *produto,
+   int etapa_id,
+   int atividade_id,
+   const char *atividade_nome,
+   int tentativa,
+   int tick_fila,
+   int tick_inicio,
+   int tick_fim,
+   int ticks_etapa,
+   int sucesso
+);
+
 int desempilhar_historico(Produto *produto);
 void liberar_historico(Produto *produto);
 

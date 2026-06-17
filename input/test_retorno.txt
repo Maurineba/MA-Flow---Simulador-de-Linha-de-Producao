@@ -1,0 +1,7 @@
+SIMULACAO teste_retorno 42 12
+PRODUTO 1 1 Produto-Retorno
+LINHA_PRODUCAO 2
+ETAPA 1 1 1 0.00 Base
+ATIVIDADE 10 1 0.00 Preparar
+ETAPA 2 1 1 1.00 Qualidade
+ATIVIDADE 20 1 0.00 Conferir

@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 #include "simulacao.h"
 #include "produto.h"
@@ -14,8 +15,21 @@ Simulacao *criar_simulacao() {
    }
 
    simulacao->nome[0] = '\0';
+   simulacao->timestamp[0] = '\0';
    simulacao->semente = 0;
    simulacao->tempo_limite = 0;
+
+   time_t agora = time(NULL);
+   struct tm *data = localtime(&agora);
+
+   if (data != NULL) {
+      strftime(
+         simulacao->timestamp,
+         sizeof(simulacao->timestamp),
+         "%Y%m%d_%H%M%S",
+         data
+      );
+   }
 
    simulacao->produto.qtde_produzir = 0;
    simulacao->produto.taxa_por_seg = 0;

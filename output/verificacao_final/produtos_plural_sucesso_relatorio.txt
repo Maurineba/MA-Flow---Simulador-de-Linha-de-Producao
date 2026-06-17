@@ -1,0 +1,89 @@
+=== METADADOS ===
+id_simulacao: teste_produtos_20260616_212749
+semente_utilizada: 7
+arquivo_entrada: input\test_produtos.txt
+tick_fim: 3
+produtos_criados: 2
+produtos_concluidos: 2
+produtos_descartados: 0
+produtos_finalizados: 2
+produtos_na_fila: 0
+produtos_ativos: 0
+tempo_medio_linha: 2.00
+tempo_medio_espera: 0.00
+falhas_totais: 0
+meta_alcancada: sim
+produtos_faltantes: 0
+
+=== RELATORIO DA SIMULACAO teste_produtos_20260616_212749 ===
+
+--- RELATORIO DAS ETAPAS ---
+
+ETAPA 1 Unica
+Atividades: 1
+Capacidade: 1
+Ocupacao final: 0
+Ocupacao maxima: 1/1
+Ticks bloqueada: 0
+Taxa de retorno/controle inicial: 0.00
+Quantidade de falhas: 0
+Falhas por produto: 0.00
+Tempo minimo: 2
+Tempo medio: 2.00
+Tempo maximo: 2
+Tempo medio em fila: 0.00
+
+--- RELATORIO DAS ATIVIDADES ---
+
+ETAPA 1 Unica:
+ATIVIDADE 10 Fazer:
+Capacidade: 1
+Vazao: 2
+Tempo de execucao: 1
+Tempo medio em fila: 1.00
+Tempo medio total: 2.00
+Quantidade de falhas: 0
+
+--- ANALISE DE GARGALO ---
+Nenhum gargalo identificado.
+
+--- RELATORIO DOS PRODUTOS ---
+
+--- PRODUTOS CONCLUIDOS ---
+
+--- PRODUTO 1 ---
+Modelo: Produto-Plural
+Situacao: concluido
+Criacao: tick 0
+Entrada na linha: tick 0
+Saida da linha: tick 2
+Tempo total: 2 ticks
+Tempo em espera: 0 ticks
+Falhas: 0
+Trajetoria:
+Etapa 1 tentativa 1:
+Atividade 10 (Fazer) fila:1 inicio:1 fim:2 OK
+Ticks na etapa: 2 ticks
+
+--- PRODUTO 2 ---
+Modelo: Produto-Plural
+Situacao: concluido
+Criacao: tick 1
+Entrada na linha: tick 1
+Saida da linha: tick 3
+Tempo total: 2 ticks
+Tempo em espera: 0 ticks
+Falhas: 0
+Trajetoria:
+Etapa 1 tentativa 1:
+Atividade 10 (Fazer) fila:1 inicio:2 fim:3 OK
+Ticks na etapa: 2 ticks
+
+--- PRODUTOS DESCARTADOS ---
+Nenhum produto descartado.
+
+--- PRODUTOS AGUARDANDO NA FILA ---
+Nenhum produto aguardando na fila.
+
+--- PRODUTOS ATIVOS NAS ETAPAS ---
+Nenhum produto ativo nas etapas.

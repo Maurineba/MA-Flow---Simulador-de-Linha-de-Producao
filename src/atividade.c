@@ -27,6 +27,9 @@ Atividade *criar_atividade_por_linha(const char *linha) {
    }
 
    nova_atividade->quantidade_falhas = 0;
+   nova_atividade->produtos_processados = 0;
+   nova_atividade->soma_tempos_fila = 0;
+   nova_atividade->soma_tempos_totais = 0;
    nova_atividade->atividade_prox = NULL;
 
    return nova_atividade;

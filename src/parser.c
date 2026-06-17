@@ -41,6 +41,10 @@ Simulacao *ler_arquivo(const char *path) {
          continue;
       }
 
+      if (strcmp(chave, "SIMULADOR") == 0) {
+         continue;
+      }
+
       if (strcmp(chave, "SIMULACAO") == 0) {
          if (sscanf(linha, "%*s %29s %d %d",
             simulacao->nome,
@@ -57,7 +61,10 @@ Simulacao *ler_arquivo(const char *path) {
          }
       }
 
-      else if (strcmp(chave, "PRODUTO") == 0) {
+      else if (
+         strcmp(chave, "PRODUTO") == 0 ||
+         strcmp(chave, "PRODUTOS") == 0
+      ) {
          if (sscanf(linha, "%*s %d %d %29s",
             &simulacao->produto.qtde_produzir,
             &simulacao->produto.taxa_por_seg,
@@ -65,7 +72,7 @@ Simulacao *ler_arquivo(const char *path) {
 
             printf("\nErro ao ler a configuracao do produto.\n");
             printf("Formato esperado:\n");
-            printf("PRODUTO <quantidade> <taxa_por_segundo> <nome>\n");
+            printf("PRODUTO ou PRODUTOS <quantidade> <taxa_por_segundo> <nome>\n");
             printf("Linha recebida: %s", linha);
             liberar_simulacao(simulacao);
             fclose(arquivo);
@@ -178,7 +185,7 @@ Simulacao *ler_arquivo(const char *path) {
          printf("\nErro ao ler o arquivo de entrada.\n");
          printf("Palavra-chave desconhecida: %s\n", chave);
          printf("Palavras-chave permitidas:\n");
-         printf("SIMULACAO, PRODUTO, LINHA_PRODUCAO, ETAPA e ATIVIDADE.\n");
+         printf("SIMULADOR, SIMULACAO, PRODUTO/PRODUTOS, LINHA_PRODUCAO, ETAPA e ATIVIDADE.\n");
          printf("Linha com problema: %s", linha);
          liberar_simulacao(simulacao);
          fclose(arquivo);

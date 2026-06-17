@@ -1,0 +1,248 @@
+=== METADADOS ===
+id_simulacao: teste_gargalo_20260616_212944
+semente_utilizada: 42
+arquivo_entrada: input\test.txt
+tick_fim: 30
+produtos_criados: 8
+produtos_concluidos: 4
+produtos_descartados: 0
+produtos_finalizados: 4
+produtos_na_fila: 0
+produtos_ativos: 4
+tempo_medio_linha: 17.50
+tempo_medio_espera: 0.00
+falhas_totais: 0
+meta_alcancada: nao
+produtos_faltantes: 4
+
+=== RELATORIO DA SIMULACAO teste_gargalo_20260616_212944 ===
+
+--- RELATORIO DAS ETAPAS ---
+
+ETAPA 1 Preparacao
+Atividades: 1
+Capacidade: 3
+Ocupacao final: 3
+Ocupacao maxima: 3/3
+Ticks bloqueada: 29
+Taxa de retorno/controle inicial: 0.00
+Quantidade de falhas: 0
+Falhas por produto: 0.00
+Tempo minimo: 2
+Tempo medio: 2.00
+Tempo maximo: 2
+Tempo medio em fila: 0.00
+
+ETAPA 2 Processamento
+Atividades: 1
+Capacidade: 1
+Ocupacao final: 1
+Ocupacao maxima: 1/1
+Ticks bloqueada: 0
+Taxa de retorno/controle inicial: 0.00
+Quantidade de falhas: 0
+Falhas por produto: 0.00
+Tempo minimo: 6
+Tempo medio: 6.00
+Tempo maximo: 6
+Tempo medio em fila: 0.00
+
+ETAPA 3 Finalizacao
+Atividades: 1
+Capacidade: 2
+Ocupacao final: 0
+Ocupacao maxima: 1/2
+Ticks bloqueada: 0
+Taxa de retorno/controle inicial: 0.00
+Quantidade de falhas: 0
+Falhas por produto: 0.00
+Tempo minimo: 1
+Tempo medio: 1.00
+Tempo maximo: 1
+Tempo medio em fila: 0.00
+
+--- RELATORIO DAS ATIVIDADES ---
+
+ETAPA 1 Preparacao:
+ATIVIDADE 10 Preparar:
+Capacidade: 3
+Vazao: 8
+Tempo de execucao: 1
+Tempo medio em fila: 1.00
+Tempo medio total: 2.00
+Quantidade de falhas: 0
+
+ETAPA 2 Processamento:
+ATIVIDADE 20 Processar:
+Capacidade: 1
+Vazao: 4
+Tempo de execucao: 6
+Tempo medio em fila: 0.00
+Tempo medio total: 6.00
+Quantidade de falhas: 0
+
+ETAPA 3 Finalizacao:
+ATIVIDADE 30 Finalizar:
+Capacidade: 2
+Vazao: 4
+Tempo de execucao: 1
+Tempo medio em fila: 0.00
+Tempo medio total: 1.00
+Quantidade de falhas: 0
+
+--- ANALISE DE GARGALO ---
+Etapa mais bloqueada: 1 - Preparacao
+Ticks bloqueada: 29
+Ocupacao maxima: 3/3
+
+--- RELATORIO DOS PRODUTOS ---
+
+--- PRODUTOS CONCLUIDOS ---
+
+--- PRODUTO 1 ---
+Modelo: Produto-Gargalo
+Situacao: concluido
+Criacao: tick 0
+Entrada na linha: tick 0
+Saida da linha: tick 9
+Tempo total: 9 ticks
+Tempo em espera: 0 ticks
+Falhas: 0
+Trajetoria:
+Etapa 1 tentativa 1:
+Atividade 10 (Preparar) fila:1 inicio:1 fim:2 OK
+Ticks na etapa: 2 ticks
+Etapa 2 tentativa 1:
+Atividade 20 (Processar) fila:0 inicio:2 fim:8 OK
+Ticks na etapa: 6 ticks
+Etapa 3 tentativa 1:
+Atividade 30 (Finalizar) fila:0 inicio:8 fim:9 OK
+Ticks na etapa: 1 ticks
+
+--- PRODUTO 2 ---
+Modelo: Produto-Gargalo
+Situacao: concluido
+Criacao: tick 0
+Entrada na linha: tick 0
+Saida da linha: tick 15
+Tempo total: 15 ticks
+Tempo em espera: 0 ticks
+Falhas: 0
+Trajetoria:
+Etapa 1 tentativa 1:
+Atividade 10 (Preparar) fila:1 inicio:1 fim:2 OK
+Ticks na etapa: 2 ticks
+Etapa 2 tentativa 1:
+Atividade 20 (Processar) fila:0 inicio:8 fim:14 OK
+Ticks na etapa: 6 ticks
+Etapa 3 tentativa 1:
+Atividade 30 (Finalizar) fila:0 inicio:14 fim:15 OK
+Ticks na etapa: 1 ticks
+
+--- PRODUTO 3 ---
+Modelo: Produto-Gargalo
+Situacao: concluido
+Criacao: tick 1
+Entrada na linha: tick 1
+Saida da linha: tick 21
+Tempo total: 20 ticks
+Tempo em espera: 0 ticks
+Falhas: 0
+Trajetoria:
+Etapa 1 tentativa 1:
+Atividade 10 (Preparar) fila:1 inicio:2 fim:3 OK
+Ticks na etapa: 2 ticks
+Etapa 2 tentativa 1:
+Atividade 20 (Processar) fila:0 inicio:14 fim:20 OK
+Ticks na etapa: 6 ticks
+Etapa 3 tentativa 1:
+Atividade 30 (Finalizar) fila:0 inicio:20 fim:21 OK
+Ticks na etapa: 1 ticks
+
+--- PRODUTO 4 ---
+Modelo: Produto-Gargalo
+Situacao: concluido
+Criacao: tick 1
+Entrada na linha: tick 1
+Saida da linha: tick 27
+Tempo total: 26 ticks
+Tempo em espera: 0 ticks
+Falhas: 0
+Trajetoria:
+Etapa 1 tentativa 1:
+Atividade 10 (Preparar) fila:1 inicio:2 fim:3 OK
+Ticks na etapa: 2 ticks
+Etapa 2 tentativa 1:
+Atividade 20 (Processar) fila:0 inicio:20 fim:26 OK
+Ticks na etapa: 6 ticks
+Etapa 3 tentativa 1:
+Atividade 30 (Finalizar) fila:0 inicio:26 fim:27 OK
+Ticks na etapa: 1 ticks
+
+--- PRODUTOS DESCARTADOS ---
+Nenhum produto descartado.
+
+--- PRODUTOS AGUARDANDO NA FILA ---
+Nenhum produto aguardando na fila.
+
+--- PRODUTOS ATIVOS NAS ETAPAS ---
+
+--- PRODUTO 6 ---
+Modelo: Produto-Gargalo
+Situacao: em processamento
+Criacao: tick 2
+Entrada na linha: tick 13
+Tempo em espera: 11 ticks
+Etapa atual: 1 - Preparacao
+Atividade atual: todas concluidas
+Estado: aguardando vaga na proxima etapa
+Falhas: 0
+Trajetoria:
+Etapa 1 tentativa 1:
+Atividade 10 (Preparar) fila:1 inicio:14 fim:15 OK
+Ticks na etapa: 2 ticks
+
+--- PRODUTO 7 ---
+Modelo: Produto-Gargalo
+Situacao: em processamento
+Criacao: tick 3
+Entrada na linha: tick 19
+Tempo em espera: 16 ticks
+Etapa atual: 1 - Preparacao
+Atividade atual: todas concluidas
+Estado: aguardando vaga na proxima etapa
+Falhas: 0
+Trajetoria:
+Etapa 1 tentativa 1:
+Atividade 10 (Preparar) fila:1 inicio:20 fim:21 OK
+Ticks na etapa: 2 ticks
+
+--- PRODUTO 8 ---
+Modelo: Produto-Gargalo
+Situacao: em processamento
+Criacao: tick 3
+Entrada na linha: tick 25
+Tempo em espera: 22 ticks
+Etapa atual: 1 - Preparacao
+Atividade atual: todas concluidas
+Estado: aguardando vaga na proxima etapa
+Falhas: 0
+Trajetoria:
+Etapa 1 tentativa 1:
+Atividade 10 (Preparar) fila:1 inicio:26 fim:27 OK
+Ticks na etapa: 2 ticks
+
+--- PRODUTO 5 ---
+Modelo: Produto-Gargalo
+Situacao: em processamento
+Criacao: tick 2
+Entrada na linha: tick 7
+Tempo em espera: 5 ticks
+Etapa atual: 2 - Processamento
+Atividade atual: 20 - Processar
+Progresso da atividade: 4/6 ticks
+Falhas: 0
+Trajetoria:
+Etapa 1 tentativa 1:
+Atividade 10 (Preparar) fila:1 inicio:8 fim:9 OK
+Ticks na etapa: 2 ticks

@@ -1,5 +1,5 @@
 === METADADOS ===
-id_simulacao: teste_retorno_20260616_212944
+id_simulacao: teste_retorno_20260616_212749
 semente_utilizada: 42
 arquivo_entrada: input\test_retorno.txt
 tick_fim: 12
@@ -15,7 +15,7 @@ falhas_totais: 5
 meta_alcancada: nao
 produtos_faltantes: 1
 
-=== RELATORIO DA SIMULACAO teste_retorno_20260616_212944 ===
+=== RELATORIO DA SIMULACAO teste_retorno_20260616_212749 ===
 
 --- RELATORIO DAS ETAPAS ---
 

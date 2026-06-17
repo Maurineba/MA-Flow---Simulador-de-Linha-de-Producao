@@ -7,6 +7,9 @@ typedef struct Atividade {
    int id;
    int duracao;
    int quantidade_falhas;
+   int produtos_processados;
+   int soma_tempos_fila;
+   int soma_tempos_totais;
    float taxa_falha;
    char nome[30];
 
@@ -21,6 +24,12 @@ typedef struct Etapa {
    int ocupacao_maxima;
    int quantidade_falhas;
    int ticks_bloqueada;
+   int produtos_processados;
+   int soma_tempos;
+   int tempo_minimo;
+   int tempo_maximo;
+   int soma_tempos_fila;
+   int entradas_na_etapa;
    float taxa_falha;
    char nome[30];
 
@@ -53,6 +62,7 @@ typedef struct PilhaDescarte {
 
 typedef struct Simulacao {
    char nome[30];
+   char timestamp[20];
    int semente;
    int tempo_limite;
 

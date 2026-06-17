@@ -1,5 +1,5 @@
 === RELATORIO PARCIAL ===
-Simulacao: teste_gargalo_20260616_212944
+Simulacao: teste_gargalo_20260616_212749
 Tick atual: 5
 Produtos previstos: 8
 Produtos criados: 8
